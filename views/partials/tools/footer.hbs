@@ -1,0 +1,168 @@
+<div class="pautas-contenedor">
+  <img src="https://iili.io/HO1x0AJ.jpg" alt="pauta_1.jpg">
+  <img src="https://iili.io/HO1xl9a.jpg" alt="pauta_2.jpg">
+  <img src="https://iili.io/HO1xa8g.jpg" alt="pauta_3.jpg">
+</div>
+
+{{#if subscriptionFooter.active}}
+  {{> tools/views/partials/suscription}}
+{{/if}}
+<footer class="nav-tools-footer">
+  <section class="nav-tools-footer__bound">
+    <section class="nav-tools-footer__top">
+      <div class="nav-tools-footer__info header--custom-text">
+        <div class="nav-tools-footer__logo">
+          {{#if logo}}
+            <img src="{{logo}}" alt="{{name}}">
+          {{else}}
+            <span class="header--custom-text">
+              {{name}}
+            </span>
+          {{/if}}
+        </div>
+        <div class="nav-tools-footer__contact invisible">
+          <div data-editable="contact">
+            {{#if showContact}}
+              {{#if showPhone}}
+                <a class="header--custom-text">{{phone.formatted}}</a>
+              {{/if}}
+
+              {{#if showEmail}}
+                <a class="header--custom-text" href="mailto:{{email}}">{{email}}</a>
+              {{/if}}
+
+              {{#if address}}
+                {{#with address}}
+                  <p>
+                    <span itemprop="streetAddress" class="header--custom-text">{{address}}</span>
+                    <span itemprop="addressLocality" class="header--custom-text">{{city}}</span>
+                    <span itemprop="addressRegion" class="header--custom-text">{{state}}</span>
+                  </p>
+                {{/with}}
+              {{/if}}
+            {{/if}}
+          </div>
+          <div class="nav-tools-footer__social-media" data-editable="socialNetworks">
+            {{#if showSocialNetworks}}
+              {{#each socialNetworks}}
+                <a href="{{url}}" target="_blank" class="header--custom-svg" rel="noopener noreferrer nofollow">
+                  {{> (concat 'icons/social_networks/' (lookup . 'name'))}}
+                </a>
+              {{/each}}
+            {{/if}}
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-tools-footer__categories header--custom-border">
+          <span class="nav-tools-footer__category">
+            <a href="#">
+              Electrónica
+            </a>
+          </span>
+          <span class="nav-tools-footer__category">
+            <a href="#">
+              Seguridad
+            </a>
+          </span>
+          <span class="nav-tools-footer__category">
+            <a href="#">
+              Conectividad
+            </a>
+          </span>
+          <span class="nav-tools-footer__category">
+            <a href="#">
+              Audio
+            </a>
+          </span>
+          <span class="nav-tools-footer__category">
+            <a href="#">
+              Celulares
+            </a>
+          </span>
+          <span class="nav-tools-footer__category">
+            <a href="#">
+              Computación
+            </a>
+          </span>
+          <span class="nav-tools-footer__category">
+            <a href="#">
+              Herramientas
+            </a>
+          </span>
+          <span class="nav-tools-footer__category">
+            <a href="#">
+              Instrumentos Musicales
+            </a>
+          </span>
+          <span class="nav-tools-footer__category">
+            <a href="#">
+              Bebés
+            </a>
+          </span>
+          <span class="nav-tools-footer__category">
+            <a href="#">
+              Más Categorías
+            </a>
+          </span>
+      </div>
+
+      <div class="nav-tools-footer__pages header--custom-text header--custom-border">
+        <span class="nav-tools-footer__page">
+          <a href="{{linkToHowBuy.href}}" class="header--custom-text">{{linkToHowBuy.label}}</a>
+        </span>
+      </div>
+
+      <div class="nav-tools-footer__pages header--custom-border redes-sociales-contenedor">
+        <a href="#">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="instagram.jpg">
+        </a>
+        <a href="#">
+        <img src="https://cdn-icons-png.flaticon.com/512/2175/2175193.png" alt="facebook.jpg">
+        </a>
+        <a href="#">
+        <img src="https://cdn-icons-png.flaticon.com/512/717/717426.png" alt="youtube.jpg">
+        </a>
+      </div>
+
+      <div class="nav-tools-footer__social-media invisible" data-editable="socialNetworks">
+        {{#if showSocialNetworks}}
+          {{#each socialNetworks}}
+            <a href="{{url}}" target="_blank" class="header--custom-svg" rel="noopener noreferrer nofollow">
+              {{> (concat 'icons/social_networks/' (lookup . 'name'))}}
+            </a>
+          {{/each}}
+        {{/if}}
+      </div>
+    </section>
+    <section class="nav-tools-footer__bottom header--custom-border header--custom-text">
+      <div>
+        <div class="nav-footer-about">
+          <a href="{{{linkToMShopsLandingPage}}}" target="_blank" class="header--custom-text">{{i18n.powered_by}}</a>
+          {{#if linkToLegalNotices}}
+            <a href="{{linkToLegalNotices.href}}" class="header--custom-text">{{linkToLegalNotices.label}}</a>
+          {{/if}}
+          {{#if linkToLGPD}}
+            <a href="{{linkToLGPD.href}}" class="header--custom-text">{{linkToLGPD.label}}</a>
+          {{/if}}
+        </div>
+
+        {{#if showBusinessData}}
+          {{#with fiscalData}}
+            <div class="nav-footer-fiscal-data">
+              <p class="nav-footer-fiscal-data__name">{{legal_name}}</p>
+              <p class="nav-footer-fiscal-data__id">{{legal_doc}}</p>
+            </div>
+          {{/with}}
+        {{/if}}
+      </div>
+      {{#if showQrData}}
+        {{#with fiscalData}}
+          <a href={{qr_link}} target="_F960AFIPInfo">
+            <img class="nav-footer-afip-img" src={{qr_img}} alt="Data fiscal" />
+          </a>
+        {{/with}}
+      {{/if}}
+    </section>
+  </section>
+</footer>
