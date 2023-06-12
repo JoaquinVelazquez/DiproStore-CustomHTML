@@ -1,10 +1,11 @@
 <div class="header-wrapper header-wrapper--fixed {{headerAdditionalClasses}}" data-ms-theme="tools">
     {{#if flash.enabled}} {{> components/flash}} {{/if}}
     {{> components/cookieDisclaimer}}
-    <header role="banner" class="header" itemtype="http://schema.org/Store" itemid="#this" itemscope="" class="nav-tools">
+    <header role="banner" class="header" itemtype="http://schema.org/Store" itemid="#this" itemscope=""
+        class="nav-tools">
         <div class="nav-tools-header__top header--custom-background">
             <div class="nav-tools-header__top-bound">
-                <a href="/" id="logo-wrapper" class="nav-tools__logo-wrapper">
+                <a href="https://www.diprostore.com/" id="logo-wrapper" class="nav-tools__logo-wrapper">
                     {{#if logo}}
                     <img id="image-logo" src="{{logo}}" alt="{{name}}" />
                     {{else}}
@@ -27,7 +28,8 @@
                             {{/if}}
                             <form class="search-box-container" id="search-form" action="{{home_url}}">
                                 <div class="close"></div>
-                                <input type="text" id="search-input" name="search-box-tools" placeholder="{{i18n.placeholder}}" />
+                                <input type="text" id="search-input" name="search-box-tools"
+                                    placeholder="{{i18n.placeholder}}" />
                                 <button type="submit" class="search-button">
                                     {{> tools/views/partials/search}}
                                 </button>
@@ -48,14 +50,15 @@
                             </a>
                             {{/if}}
                             <!-- Required for menu-responsive widget -->
-                            <input type="checkbox" id="mobile-categories-menu-switch" name="nav-tools-header__menu-switch" />
+                            <input type="checkbox" id="mobile-categories-menu-switch"
+                                name="nav-tools-header__menu-switch" />
                             <label for="mobile-categories-menu-switch" id="hamburguer-menu">
                                 <span class="nav-header__hamburger"></span>
                                 <span class="nav-header__hamburger"></span>
                                 <span class="nav-header__hamburger"></span>
                             </label>
                             <!-- Mobile categories menu has to be a sibling of switcher-->
-                            <ul class="nav-list nav-list--vertical header--custom-background" itemtype="http://schema.org/SiteNavigationElement" itemscope>
+                            <!--<ul class="nav-list nav-list--vertical header--custom-background" itemtype="http://schema.org/SiteNavigationElement" itemscope>
                                 {{#each menu}}
                                 <div class="nav-tools-list--vertical__item" data-toggle="{{this.name}}">
                                     <li class="nav-tools-list--vertical__category header--custom-text">
@@ -65,12 +68,12 @@
                                             <span class="nav-header__toggle"></span>
                                             <span class="nav-header__toggle"></span>
                                         </label>
-                                        {{/if}}
-                                        <!-- /.attr-x -->
-                                        <hr class="nav-tools-list--vertical__hr header--custom-border" />
-                                    </li>
-                                    <!-- /.nav-tools-list--vertical__category header--custom-text -->
-                                    <div class="target-subCategory-{{@index}}">
+                                        {{/if}}-->
+                            <!-- /.attr-x -->
+                            <!--<hr class="nav-tools-list--vertical__hr header--custom-border" />
+                                    </li>-->
+                            <!-- /.nav-tools-list--vertical__category header--custom-text -->
+                            <!--<div class="target-subCategory-{{@index}}">
                                         {{#each this.nodes}}
                                         <div class="nav-tools-list--vertical__subitem">
                                             <li class="header--custom-text">
@@ -80,11 +83,11 @@
                                                     <span class="nav-header__toggle"></span>
                                                     <span class="nav-header__toggle"></span>
                                                 </label>
-                                                {{/if}}
-                                                <!-- /.attr-x -->
-                                            </li>
-                                            <!-- /.header--custom-text -->
-                                            <div class="nav-tools-list--vertical__attr-container target-attribute-{{@../index}}">
+                                                {{/if}}-->
+                            <!-- /.attr-x -->
+                            <!--</li>-->
+                            <!-- /.header--custom-text -->
+                            <!-- <div class="nav-tools-list--vertical__attr-container target-attribute-{{@../index}}">
                                                 {{#each this.nodes}}
                                                 <li class="nav-tools-list--vertical__attribute header--custom-text">
                                                     <a href="{{this.url}}">{{this.name}}</a>
@@ -100,31 +103,155 @@
                                 <li class="nav-tools-list--vertical__category header--custom-text how-buy__button" data-js="how-buy__button" itemprop="name" tools-custom-data-emitter="how-buy__button">
                                   <a href="{{linkToHowBuy.href}}">{{linkToHowBuy.label}}</a>
                                 </li>
-                            </ul>
+                            </ul>-->
                         </nav>
+                        <div>
+                            <ul class="menuDesplegable" id="menuDesplegable">
+                                <div>
+                                    <li class="menu-item"><a href="/_DisplayType_G_Discount_5-100_NoIndex_True"><img class="ofertas-mobile" src="https://iili.io/H4PbtQS.png"></a></li>
+                                </div>
+                                <div>
+                                    <li class="menu-item" id="noveno-menu-item"><a href="/listado/bebes/#applied_filter_id%3Dcategory%26applied_filter_name%3DCategorías%26applied_filter_order%3D4%26applied_value_id%3DMLA1384%26applied_value_name%3DBebés%26applied_value_order%3D1%26applied_value_results%3D42%26is_custom%3Dfalse">BEBÉS</a><img
+                                            class="menu-arrow" id="flecha_9"
+                                            src="https://cdn-icons-png.flaticon.com/512/25/25638.png" alt=""></li>
+                                    <ul class="submenu" id="submenu-bebes">
+                                        <li><a class="submenu-a" href="/listado/bebes/higiene-cuidado-bebe/#applied_filter_id%3Dcategory%26applied_filter_name%3DCategorías%26applied_filter_order%3D2%26applied_value_id%3DMLA409456%26applied_value_name%3DHigiene+y+Cuidado+del+Bebé%26applied_value_order%3D2%26applied_value_results%3D4%26is_custom%3Dfalse">CUIDADO E HIGIENE</a></li>
+                                        <li><a class="submenu-a" href="/listado/bebes/chupetes-mordillos/#applied_filter_id%3Dcategory%26applied_filter_name%3DCategorías%26applied_filter_order%3D2%26applied_value_id%3DMLA417853%26applied_value_name%3DChupetes+y+Mordillos%26applied_value_order%3D1%26applied_value_results%3D15%26is_custom%3Dfalse">JUGUETES</a></li>
+                                        <li><a class="submenu-a" href="/listado/bebes/lactancia-alimentacion/#applied_filter_id%3Dcategory%26applied_filter_name%3DCategorías%26applied_filter_order%3D2%26applied_value_id%3DMLA5360%26applied_value_name%3DLactancia+y+Alimentación%26applied_value_order%3D3%26applied_value_results%3D22%26is_custom%3Dfalse">LACTANCIA Y ALIMENTACIÓN</a></li>
+                                        <li><a class="submenu-a" href="/listado/bebes/paseo-bebe/_NoIndex_True#applied_filter_id%3Dcategory%26applied_filter_name%3DCategorías%26applied_filter_order%3D2%26applied_value_id%3DMLA418189%26applied_value_name%3DPaseo+del+Bebé%26applied_value_order%3D4%26applied_value_results%3D1%26is_custom%3Dfalse">CARRITOS</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <li class="menu-item" id="primer-menu-item"><a href="/listado/electronica-audio-video/">ELECTRÓNICA</a><img
+                                            class="menu-arrow" id="flecha_1"
+                                            src="https://cdn-icons-png.flaticon.com/512/25/25638.png" alt=""></li>
+                                    <ul class="submenu" id="submenu-electronica">
+                                        <li><a class="submenu-a" href="/listado/electronica-audio-video/televisores/#applied_filter_id%3Dcategory%26applied_filter_name%3DCategorías%26applied_filter_order%3D3%26applied_value_id%3DMLA1002%26applied_value_name%3DTelevisores%26applied_value_order%3D3%26applied_value_results%3D4%26is_custom%3Dfalse">TELEVISORES</a></li>
+                                        <li><a class="submenu-a" href="/listado/electronica-audio-video/audio/_NoIndex_True#applied_filter_id%3Dcategory%26applied_filter_name%3DCategorías%26applied_filter_order%3D3%26applied_value_id%3DMLA409810%26applied_value_name%3DAudio%26applied_value_order%3D1%26applied_value_results%3D2%26is_custom%3Dfalse">AUDIO</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <li class="menu-item" id="segundo-menu-item"><a href="/listado/hogar-muebles-jardin/seguridad-hogar/">SEGURIDAD</a><img
+                                            class="menu-arrow" id="flecha_2"
+                                            src="https://cdn-icons-png.flaticon.com/512/25/25638.png" alt=""></li>
+                                    <ul class="submenu" id="submenu-seguridad">
+                                        <li><a class="submenu-a" href="/listado/hogar-muebles-jardin/seguridad-hogar/sistemas-monitoreo/camaras-seguridad/">CAMARAS</a></li>
+                                    </ul>
+                                </div>
+                                {{!-- <div>
+                                    <li class="menu-item" id="tercer-menu-item"><a href="/listado/computacion/conectividad-redes/">CONECTIVIDAD</a><img
+                                            class="menu-arrow" id="flecha_3"
+                                            src="https://cdn-icons-png.flaticon.com/512/25/25638.png" alt=""></li>
+                                    <ul class="submenu" id="submenu-conectividad">
+                                        <li><a class="submenu-a" href="/listado/computacion/conectividad-redes/routers/">ROUTERS</a></li>
+                                        <li><a class="submenu-a" href="#">REPETIDORES WIFI</a></li>
+                                    </ul>
+                                </div> --}}
+                                {{!-- <div>
+                                    <li class="menu-item" id="cuarto-menu-item"><a href="/listado/electronica-audio-video/">AUDIO</a><img
+                                            class="menu-arrow" id="flecha_4"
+                                            src="https://cdn-icons-png.flaticon.com/512/25/25638.png" alt=""></li>
+                                    <ul class="submenu" id="submenu-audio">
+                                        <li><a class="submenu-a" href="/listado/electronica-audio-video/audio/auriculares/">AURICULARES</a></li>
+                                        <li><a class="submenu-a" href="#">PARLANTES</a></li>
+                                        <li><a class="submenu-a" href="#">PARLANTES BLUETOOTH</a></li>
+                                    </ul>
+                                </div> --}}
+                                {{!-- <div>
+                                    <li class="menu-item" id="quinto-menu-item"><a href="#">CELULARES</a><img
+                                            class="menu-arrow" id="flecha_5"
+                                            src="https://cdn-icons-png.flaticon.com/512/25/25638.png" alt=""></li>
+                                    <ul class="submenu" id="submenu-celulares">
+                                        <li><a class="submenu-a" href="#">TELEVISORES</a></li>
+                                        <li><a class="submenu-a" href="#">AUDIO</a></li>
+                                    </ul>
+                                </div> --}}
+                                <div>
+                                    <li class="menu-item" id="sexto-menu-item"><a href="/listado/computacion/">COMPUTACIÓN</a><img
+                                            class="menu-arrow" id="flecha_6"
+                                            src="https://cdn-icons-png.flaticon.com/512/25/25638.png" alt=""></li>
+                                    <ul class="submenu" id="submenu-computacion">
+                                        {{!-- <li><a class="submenu-a" href="#">PC DE ESCRITORIO</a></li> --}}
+                                        {{!-- <li><a class="submenu-a" href="#">TABLETS</a></li> --}}
+                                        <li><a class="submenu-a" href="/listado/computacion/laptops-accesorios/notebooks/">NOTEBOOKS</a></li>
+                                        <li><a class="submenu-a" href="/listado/computacion/monitores-accesorios/monitores/">MONITORES</a></li>
+                                        <li><a class="submenu-a" href="/listado/computacion/componentes-pc/">COMPONENTES</a>
+                                        <li><a class="submenu-a" href="/listado/computacion/conectividad-redes/routers/">ROUTERS</a></li>
+                                        {{!-- <a class="submenu-a" href="/listado/computacion/componentes-pc/">COMPONENTES</a><img class="menu-arrow" id="submenu_flecha_componentes"src="https://cdn-icons-png.flaticon.com/512/25/25638.png" alt=""> --}}
+                                            {{!-- <ul id="mini-submenu-componentes">
+                                                <li><a class="mini-submenu-a" href="#">Memoria Ram</a></li>
+                                                <li><a class="mini-submenu-a" href="#">Placas Madre</a></li>
+                                                <li><a class="mini-submenu-a" href="#">Discos Solidos</a></li>
+                                            </ul> --}}
+                                        </li>
+                                        {{!-- <li><a class="submenu-a" href="#">PERIFÉRICOS</a>
+                                            <img class="menu-arrow" id="submenu_flecha_perifericos"
+                                                src="https://cdn-icons-png.flaticon.com/512/25/25638.png" alt="">
+                                            <ul id="mini-submenu-perifericos">
+                                                <li><a class="mini-submenu-a" href="#">Mouse</a></li>
+                                                <li><a class="mini-submenu-a" href="#">Teclados</a></li>
+                                                <li><a class="mini-submenu-a" href="#">Webcams</a></li>
+                                            </ul>
+                                        </li> --}}
+                                    </ul>
+                                </div>
+                                {{!-- <div>
+                                    <li class="menu-item" id="septimo-menu-item"><a href="#">HERRAMIENTAS</a><img
+                                            class="menu-arrow" id="flecha_7"
+                                            src="https://cdn-icons-png.flaticon.com/512/25/25638.png" alt=""></li>
+                                    <ul class="submenu" id="submenu-herramientas">
+                                        <li><a class="submenu-a" href="#">ELÉCTRICAS</a></li>
+                                        <li><a class="submenu-a" href="#">JARDÍN</a></li>
+                                    </ul>
+                                </div> --}}
+                                {{!-- <div>
+                                    <li class="menu-item" id="octavo-menu-item"><a href="#">INSTRUMENTOS
+                                            MUSICALES</a><img class="menu-arrow" id="flecha_8"
+                                            src="https://cdn-icons-png.flaticon.com/512/25/25638.png" alt=""></li>
+                                    <ul class="submenu" id="submenu-musicales">
+                                        <li><a class="submenu-a" href="#">TELEVISORES</a></li>
+                                        <li><a class="submenu-a" href="#">AUDIO</a></li>
+                                    </ul>
+                                </div> --}}
+                                {{!-- <div>
+                                    <li class="menu-item" id="decimo-menu-item"><a href="#">MAS CATEGORÍAS</a><img
+                                            class="menu-arrow" id="flecha_10"
+                                            src="https://cdn-icons-png.flaticon.com/512/25/25638.png" alt=""></li>
+                                    <ul class="submenu" id="submenu-masCategorias">
+                                        <li><a class="submenu-a" href="#">DEPORTES Y FITNESS</a></li>
+                                        <li><a class="submenu-a" href="#">HOGAR</a></li>
+                                    </ul>
+                                </div> --}}
+                            </ul>
+                        </div>
                     </div>
                     <!-- Desktop navigation menu -->
                     <div class="nav-tools-header__categories header--custom-background invisible">
-                        <ul itemscope itemtype="http://schema.org/SiteNavigationElement" class="nav-list nav-list--horizontal header--custom-background header--custom-text header--custom-border" id="nav-list">
+                        <ul itemscope itemtype="http://schema.org/SiteNavigationElement"
+                            class="nav-list nav-list--horizontal header--custom-background header--custom-text header--custom-border"
+                            id="nav-list">
                             {{#each menu}}
-                                <li class="nav-list__item" itemprop="name" tools-custom-data-emitter="{{@index}}">
-                                    <a href="{{this.url}}" class="nav-list__link">{{this.name}}</a>
-                                </li>
+                            <li class="nav-list__item" itemprop="name" tools-custom-data-emitter="{{@index}}">
+                                <a href="{{this.url}}" class="nav-list__link">{{this.name}}</a>
+                            </li>
                             {{/each}}
 
                             {{#if sale.text}}
-                              <li class="nav-list__item nav-default__sale-link" id="nav-default__sale-link">
+                            <li class="nav-list__item nav-default__sale-link" id="nav-default__sale-link">
                                 <a href="{{sale.url}}" class="nav-list__link">{{sale.text}}</a>
-                              </li>
+                            </li>
                             {{/if}}
 
                             <li class="nav-list__item nav-list__item--more" style="visibility: visible;">
                                 <div class="nav-list__link">{{i18n.moreCategories}}</div>
                                 <ul class="nav-list nav-list--dropdown header--custom-background" id="more-dropdown">
                                     {{#each menu}}
-                                    <li class="nav-list__item header--custom-text" itemprop="name" tools-custom-data-receiver="{{@index}}">
+                                    <li class="nav-list__item header--custom-text" itemprop="name"
+                                        tools-custom-data-receiver="{{@index}}">
                                         <a href="{{this.url}}" class="nav-list__link">{{this.name}}</a>
-                                        <span> <hr/> </span>
+                                        <span>
+                                            <hr />
+                                        </span>
 
                                         <ul class="nav-list__item-subcategory">
                                             {{#each this.nodes}}
@@ -170,76 +297,74 @@
                 </div>
             </div>
         </div>
-                <div class="menu-desktop">
+        <div class="menu-desktop">
             <ul class="dropdown">
-                <li><a href="#">Electrónica</a>
+                <li><a href="/listado/bebes/">Bebés</a>
                     <ul>
-                        <li><a href="#">Televisores</a></li>
-                        <li><a href="#">Audio</a></li>
+                        <li><a href="/listado/bebes/higiene-cuidado-bebe/#applied_filter_id%3Dcategory%26applied_filter_name%3DCategorías%26applied_filter_order%3D2%26applied_value_id%3DMLA409456%26applied_value_name%3DHigiene+y+Cuidado+del+Bebé%26applied_value_order%3D2%26applied_value_results%3D4%26is_custom%3Dfalse">Cuidado e higiene</a></li>
+                        <li><a href="/listado/bebes/chupetes-mordillos/#applied_filter_id%3Dcategory%26applied_filter_name%3DCategorías%26applied_filter_order%3D2%26applied_value_id%3DMLA417853%26applied_value_name%3DChupetes+y+Mordillos%26applied_value_order%3D1%26applied_value_results%3D15%26is_custom%3Dfalse">Chupetes y mordillos</a></li>
+                        <li><a href="/listado/bebes/lactancia-alimentacion/#applied_filter_id%3Dcategory%26applied_filter_name%3DCategorías%26applied_filter_order%3D2%26applied_value_id%3DMLA5360%26applied_value_name%3DLactancia+y+Alimentación%26applied_value_order%3D3%26applied_value_results%3D22%26is_custom%3Dfalse">Lactancia y Alimentación</a></li>
+                        <li><a href="/listado/bebes/paseo-bebe/_NoIndex_True#applied_filter_id%3Dcategory%26applied_filter_name%3DCategorías%26applied_filter_order%3D2%26applied_value_id%3DMLA418189%26applied_value_name%3DPaseo+del+Bebé%26applied_value_order%3D4%26applied_value_results%3D1%26is_custom%3Dfalse">Carritos</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Seguridad</a>
+                <li><a href="/listado/electronica-audio-video/">Electrónica</a>
                     <ul>
-                        <li><a href="#">kits HD</a></li>
-                        <li><a href="#">cámaras</a></li>
+                        <li><a href="/listado/electronica-audio-video/televisores/#applied_filter_id%3Dcategory%26applied_filter_name%3DCategorías%26applied_filter_order%3D3%26applied_value_id%3DMLA1002%26applied_value_name%3DTelevisores%26applied_value_order%3D3%26applied_value_results%3D4%26is_custom%3Dfalse">Televisores</a></li>
+                        <li><a href="/listado/electronica-audio-video/audio/_NoIndex_True#applied_filter_id%3Dcategory%26applied_filter_name%3DCategorías%26applied_filter_order%3D3%26applied_value_id%3DMLA409810%26applied_value_name%3DAudio%26applied_value_order%3D1%26applied_value_results%3D2%26is_custom%3Dfalse">Audio</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Conectividad</a>
+                <li><a href="/listado/hogar-muebles-jardin/seguridad-hogar/">Seguridad</a>
                     <ul>
-                        <li><a href="#">Routers</a></li>
+                        {{!-- <li><a href="#">kits HD</a></li> --}}
+                        <li><a href="/listado/hogar-muebles-jardin/seguridad-hogar/sistemas-monitoreo/camaras-seguridad/">Cámaras</a></li>
+                    </ul>
+                </li>
+                {{!-- <li><a href="/router-access-point-range-extender-tp-link-tl-wr841hp-negro/p/MLA6068230?pdp_filters=category:MLA1648%7Cseller_id:1250965884#position=2&search_layout=stack&type=item&tracking_id=f2a0c50d-4ac5-48a4-a056-89a1afdfa5ec">Conectividad</a>
+                    <ul>
+                        <li><a href="/listado/computacion/conectividad-redes/routers/">Routers</a></li>
                         <li><a href="#">Repetidores WiFi</a></li>
                     </ul>
-                </li>
-                <li><a href="#">Audio</a>
+                </li> --}}
+                {{!-- <li><a href="/listado/electronica-audio-video/">Audio</a>
                     <ul>
-                        <li><a href="#">Auriculares</a></li>
+                        <li><a href="/listado/electronica-audio-video/audio/auriculares/">Auriculares</a></li>
                         <li><a href="#">Parlantes</a></li>
                         <li><a href="#">Parlantes Bluetooth</a></li>
                     </ul>
-                </li>
-                <li><a href="#">Celulares</a></li>
-                <li><a href="#">Computación</a>
+                </li> --}}
+                <li><a href="/listado/computacion/">Computación</a>
                     <ul>
-                        <li><a href="#">Pc de Escritorio</a></li>
-                        <li><a href="#">Tablets</a></li>
-                        <li><a href="#">Notebooks</a></li>
-                        <li><a href="#">Monitores</a></li>
-                        <li><a href="#">Componentes <img src="https://cdn-icons-png.flaticon.com/512/25/25638.png" alt=""></a>
+                        {{!-- <li><a href="#">Pc de Escritorio</a></li> --}}
+                        {{!-- <li><a href="#">Tablets</a></li> --}}
+                        <li><a href="/listado/computacion/laptops-accesorios/notebooks/">Notebooks</a></li>
+                        <li><a href="/listado/computacion/monitores-accesorios/monitores/">Monitores</a></li>
+                        <li><a href="/listado/computacion/componentes-pc/">Componentes</a></li>
+                        <li><a href="/listado/computacion/conectividad-redes/routers/">Routers</a></li>
+                        {{!-- <li><a href="/listado/computacion/componentes-pc/">Componentes <img src="https://cdn-icons-png.flaticon.com/512/25/25638.png" alt=""></a>
                             <ul>
                                 <li><a href="#">Memoria Ram</a></li>
                                 <li><a href="#">Placas Madre</a></li>
                                 <li><a href="#">Discos Solidos</a></li>
                             </ul>
-                        </li>
-                        <li><a href="#">Periféricos <img src="https://cdn-icons-png.flaticon.com/512/25/25638.png" alt=""></a>
+                        </li> --}}
+                        {{!-- <li><a href="#">Periféricos <img src="https://cdn-icons-png.flaticon.com/512/25/25638.png"
+                                    alt=""></a>
                             <ul>
                                 <li><a href="#">Mouse</a></li>
                                 <li><a href="#">Teclados</a></li>
                                 <li><a href="#">Webcams</a></li>
                             </ul>
-                        </li>
+                        </li> --}}
                     </ul>
+                    <li><a href="/_DisplayType_G_Discount_5-100_NoIndex_True"><img class="ofertas" src="https://iili.io/H4PbtQS.png"></a></li>
                 </li>
-                <li><a href="/listado/herramientas/_DisplayType_G">Herramientas</a>
-                    <ul>
-                        <li><a href="#">Eléctricas</a></li>
-                        <li><a href="#">Jardín</a></li>
-                    </ul>
-                </li>
-                <li><a href="/listado/herramientas/_DisplayType_G">Instrumentos Musicales</a></li>
-                <li><a href="#">Bebés</a>
-                    <ul>
-                        <li><a href="#">Cuidado e higiene</a></li>
-                        <li><a href="#">Juguetes</a></li>
-                        <li><a href="#">Carritos</a></li>
-                    </ul>
-                </li>
-                <li><a>Más Categorías</a>
+                {{!-- <li><a href="/listado/herramientas/_DisplayType_G">Instrumentos Musicales</a></li> --}}
+                {{!-- <li><a>Más Categorías</a>
                     <ul>
                         <li><a href="#">Deportes y Fitness</a></li>
                         <li><a href="#">Hogar</a></li>
                     </ul>
-                </li>
+                </li> --}}
             </ul>
         </div>
     </header>

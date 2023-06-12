@@ -1,8 +1,24 @@
+<div class="marcas-section" id="marcas-section-Bg">
+  <h2 id="marcas-section-H2">NUESTRAS MARCAS</h2>
+  <div id="marcas-borde">
+    <div class="marcas-divs">
+      <a href="/casio" class="marcas-div1 marcas"><img class="jlab" src="https://iili.io/HvdlZtS.png" alt=""></a>
+      <a href="/_BRAND_15131" class="marcas-div2 marcas"><img class="marcas-img" src="https://iili.io/Hvujiqx.png" alt=""></a>
+      <a href="/_BRAND_7885" class="marcas-div3 marcas"><img class="marcas-img" src="https://iili.io/HvJ0rjS.webp" alt=""></a>
+      <a href="#" class="marcas-div4 marcas"><img class="marcas-img" src="https://iili.io/HvdlQN2.png" alt=""></a>
+      <a href="_BRAND_7294334" class="marcas-div5 marcas"><img class="marcas-img" src="https://iili.io/HvJ04Z7.png" alt=""></a>
+      <a href="_BRAND_7494" class="marcas-div6 marcas"><img class="marcas-img" src="https://iili.io/Hkb91i7.png" alt=""></a>
+    </div>
+  </div>
+</div>
+
 <div class="pautas-contenedor">
   <img src="https://iili.io/HO1x0AJ.jpg" alt="pauta_1.jpg">
   <img src="https://iili.io/HO1xl9a.jpg" alt="pauta_2.jpg">
   <img src="https://iili.io/HO1xa8g.jpg" alt="pauta_3.jpg">
 </div>
+
+
 
 {{#if subscriptionFooter.active}}
   {{> tools/views/partials/suscription}}
@@ -55,56 +71,56 @@
       </div>
 
       <div class="nav-tools-footer__categories header--custom-border">
-          <span class="nav-tools-footer__category">
+          {{!-- <span class="nav-tools-footer__category">
             <a href="#">
               Electrónica
             </a>
+          </span> --}}
+          <span class="nav-tools-footer__category">
+            <a href="/listado/bebes/#applied_filter_id%3Dcategory%26applied_filter_name%3DCategorías%26applied_filter_order%3D4%26applied_value_id%3DMLA1384%26applied_value_name%3DBebés%26applied_value_order%3D1%26applied_value_results%3D42%26is_custom%3Dfalse">
+              Bebés
+            </a>
+          <span class="nav-tools-footer__category">
+            <a href="/listado/electronica-audio-video/">
+              Electrónica
+            </a>
+          </span>
           </span>
           <span class="nav-tools-footer__category">
-            <a href="#">
+            <a href="/listado/hogar-muebles-jardin/seguridad-hogar/">
               Seguridad
             </a>
           </span>
           <span class="nav-tools-footer__category">
-            <a href="#">
-              Conectividad
-            </a>
-          </span>
-          <span class="nav-tools-footer__category">
-            <a href="#">
-              Audio
-            </a>
-          </span>
-          <span class="nav-tools-footer__category">
-            <a href="#">
-              Celulares
-            </a>
-          </span>
-          <span class="nav-tools-footer__category">
-            <a href="#">
+            <a href="/listado/computacion/">
               Computación
             </a>
           </span>
           <span class="nav-tools-footer__category">
+            <a href="/_DisplayType_G_Discount_5-100_NoIndex_True">
+              Ofertas
+            </a>
+          </span>
+          {{!-- <span class="nav-tools-footer__category">
+            <a href="/listado/computacion/">
+              Computación
+            </a>
+          </span> --}}
+          {{!-- <span class="nav-tools-footer__category">
             <a href="#">
               Herramientas
             </a>
-          </span>
-          <span class="nav-tools-footer__category">
+          </span> --}}
+          {{!-- <span class="nav-tools-footer__category">
             <a href="#">
               Instrumentos Musicales
             </a>
-          </span>
-          <span class="nav-tools-footer__category">
-            <a href="#">
-              Bebés
-            </a>
-          </span>
-          <span class="nav-tools-footer__category">
+          </span> --}}
+          {{!-- <span class="nav-tools-footer__category">
             <a href="#">
               Más Categorías
             </a>
-          </span>
+          </span> --}}
       </div>
 
       <div class="nav-tools-footer__pages header--custom-text header--custom-border">
@@ -114,7 +130,7 @@
       </div>
 
       <div class="nav-tools-footer__pages header--custom-border redes-sociales-contenedor">
-        <a href="#">
+        {{!-- <a href="#">
         <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="instagram.jpg">
         </a>
         <a href="#">
@@ -122,7 +138,7 @@
         </a>
         <a href="#">
         <img src="https://cdn-icons-png.flaticon.com/512/717/717426.png" alt="youtube.jpg">
-        </a>
+        </a> --}}
       </div>
 
       <div class="nav-tools-footer__social-media invisible" data-editable="socialNetworks">
@@ -139,6 +155,7 @@
       <div>
         <div class="nav-footer-about">
           <a href="{{{linkToMShopsLandingPage}}}" target="_blank" class="header--custom-text">{{i18n.powered_by}}</a>
+          <p class="header--custom-text">Developed by GALARRETA®</p>
           {{#if linkToLegalNotices}}
             <a href="{{linkToLegalNotices.href}}" class="header--custom-text">{{linkToLegalNotices.label}}</a>
           {{/if}}
